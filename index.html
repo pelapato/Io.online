@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="animation-intro">
+    <strong></strong>
+  </section>
+  <main>
+    
+    <canvas width="400px" height="600px">
+      <p>Nao suporta o canvas</p>
+    </canvas>
+    <section id="left-ferramentas">
+      <article>
+        <button id="lapis"><img src="src/images/pencil-mark-plus-svgrepo-com.svg" alt="pincel"/></button>
+        <button id="lixeira"><img src="src/images/trash2.svg" alt="apagar"/></button>
+        <button id="paleta"><img src="src/images/palette.svg" alt="paleta"/><input type="color"/></button>
+        <button id="recorte"><img src="./src/images/crop.svg" alt="recorte"/></button>
+        <button id="mouse"><img src="./src/images/cursor.svg" alt="pointerMouse"/></button>
+        <button id="texto"><img src="./src/images/fonts.svg" alt="texto"/></button>
+      </article>
+      <article>
+        <button id="adicionar">+</button>
+        <button id="baixar"><img src="./src/images/save.svg" alt="save-file"/></button>
+        <button id="sistema"><img src="./src/images/gear.svg" alt="configuration"/></button>
+        <button id="pergunta"><img src="./src/images/question-circle.svg" alt="pergunta"/></button>
+      </article>
+    </section>
+    <section id="editores">
+      <article class="editor" id="lapis-">
+        <div>
+          <select id="selecao">
+            <option value="0">Lapis</option>
+            <option value="1">Caneta</option>
+            <option value="2">Giz</option>
+            <option value="3">lapis</option>
+          </select>
+        </div>
+        <div id="tamanho-linha">
+          <div>
+            <p>Largura da linha</p>
+            <input type="number" id="largura"/>
+            <p>px</p>
+            <input type="number" id="expresura"/>
+            <p>px</p>
+          </div>
+          <div>
+            <input type="range" value="25"/>
+            <button class="btn_ativar">Confirmar</button>
+          </div>
+      </article>
+      <article class="editor" id="cofing">
+        <div>
+          <p>Novo</p>
+          <button>Importar</button>
+        </div>
+        <select id="selecao">
+            <option value="0">600x300</option>
+            <option value="1">400x400</option>
+            <option value="2">600x200</option>
+            <option value="3">400x300</option>
+          </select>
+          <div id="tam">
+            <label for="largura-canvas">
+              largura
+              <input type="number" placeholder="px" id="largura-canvas"/>
+            </label>
+            <label for="altura-canvas">
+              altura
+              <input type="number" placeholder="px" id="altura-canvas"/>
+            </label>
+          </div>
+          <button class="btn_ativar">criar</button>
+      </article>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
